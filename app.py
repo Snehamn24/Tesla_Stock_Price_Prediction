@@ -23,7 +23,7 @@ st.write(
 # LOAD MODEL AND SCALER
 # ==========================================
 
-model = load_model("final_tesla_model.keras")
+model = load_model("final_tesla_model.keras",compile=False)
 scaler = joblib.load("scaler.pkl")
 
 FEATURES = ["Open", "High", "Low", "Close", "Volume"]
